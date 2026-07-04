@@ -1,0 +1,7 @@
+- name: Run pytest with coverage
+  run: |
+    pytest -q \
+      --cov=stock_analysis \
+      --cov-report=term-missing \
+      --cov-report=xml \
+      --cov-report=html
